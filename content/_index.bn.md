@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: 主页
+    name: হোম
     weight: 1
     pre: fa-house
 ---

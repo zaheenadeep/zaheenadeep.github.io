@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: 2023-04-20
+date: 2025-11-08
 draft: false
 layout: page
 menu:
@@ -10,17 +10,16 @@ menu:
     pre: fa-info-circle
 ---
 
-[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) is a blog theme originally based on [Jekyll](https://jekyllrb.com/). Due to Jekyll's design limitations, it does not natively support internationalization (i18n) and requires third-party plugins for i18n functionality. To enable i18n support for Chirpy without the hassle of relying on third-party plugins, the [hugo-theme-chirpy](https://github.com/geekifan/hugo-theme-chirpy) project migrated the Chirpy theme to [Hugo](https://gohugo.io/) with minimal adaptations. All features of Chirpy are available in hugo-theme-chirpy (though some functionalities may operate differently within the Hugo framework).
+I am a tinkerer, builder, [hacker](https://paulgraham.com/hp.html), but above all, a lover of everything computers.
 
-Follow the posts in the demo site to quickly set up a free personal blog!
-## Features
+It all started as a kid poking around `C:\Windows\System32`, running [QuickBASIC](https://en.wikipedia.org/wiki/QuickBASIC) code I didn't understand, copying Excel formulae from books I couldn't read. But computers were with me in all stages of life. I was writing web pages in dumbphones, learning jQuery from W3Schools, rooting Android, installing custom ROMs from [XDA](https://xdaforums.com/c/custom-rom-central.2605/), building robots with Arduino, dual booting Ubuntu with Windows.
 
-- **Dark Mode**: Enhanced readability in low-light environments.
-- **Multilingual UI:** Easily switch between different languages.
-- **Efficient Post Organization:** Use hierarchical categories, trending tags, recommended reading, and search functionalities.
-- **Optimized Layout:** Includes TOC, syntax highlighting, prompts, and more.
-- **Rich Writing Extensions:** Support for mathematical formulas, charts, flowcharts, and embedded media.
-- **Multiple Comment Systems:** Choose from various commenting options.
-- **Web Analysis Tools:** Integrated with multiple analytics tools.
-- **Modern Web Technologies:** Built for SEO and web performance.
-- **RSS Feed Support:** Keep your readers updated with RSS feeds.
+Eventually, I pursued a bachelor's degree in computer science from [University of Maryland, College Park](https://umd.edu/). I hated tests and quizzes, but I enjoyed learning software construction and the inner workings of computers. During this period, I also worked as a systems administrator in UMD's computing research institute, [UMIACS](https://www.umiacs.umd.edu/about). This was my initiation into the world of enterprise computing. This was a diverse job that entailed everything from help desk support to data center management, SLURM cluster deployment, AV facility management, Podman containerization, Puppet configuration management, vSphere and KVM virtualization, Python and Django app development, scale-out NAS operations, printer management, backups, object storage, and web hosting. I could not have asked for a better training ground.
+
+Currently, I am an infrastructure engineer at [CoStar Group](https://www.costargroup.com/about-us/brands), the company that owns [Apartments.com](https://www.apartments.com). I lucked out again since my team shares a broad spectrum of responsibilities. I get to play with data centers, virtualization, VDI, blade server systems, storage arrays, scale-out NAS, tape libraries, backups, Packer, Ansible, Terraform, PowerShell, and EC2 Image Builder.
+
+But you can't expect work to scratch every itch. I need a dose of everything like DevOps, networking, authentication, and AI. That's why I'm a homelabber. The backbone of my homelab is an Asus wireless router, a Raspberry Pi 4 LTS running Ubuntu, an Asus laptop running Proxmox VE, and a custom tower server running TrueNAS SCALE. But here I can play with Docker, Docker Swarm, Tailscale, Traefik, Kubernetes, Home Assistant, ZFS, Cloudflare, Pi-Hole, LLMs, and everything you can self-host.
+
+After years of exposure to technology, I feel like sharing my thoughts every now and then. That is why I created this blog. Hopefully you're still reading. 🙂
+
+Credit where it's due. Website theme: [hugo-theme-chirpy](https://github.com/geekifan/hugo-theme-chirpy)
