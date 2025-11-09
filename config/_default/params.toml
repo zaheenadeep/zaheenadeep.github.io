@@ -33,7 +33,7 @@ author = "zdeep"
 
 [comments]
 # Global switch for the post-comment system. [true | false]
-enable = false
+enable = true
 # The provider options are as follows: [disqus | utterances | giscus]
 provider = "giscus"
 
