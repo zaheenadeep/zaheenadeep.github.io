@@ -18,7 +18,7 @@ author = "zdeep"
   icon = "fab fa-github"
 
 [[social.links]]
-  id = "https://linkedin.com/in/zaheenadeep"
+  url = "https://linkedin.com/in/zaheenadeep"
   icon = "fab fa-linkedin"
 
 [[social.links]]
