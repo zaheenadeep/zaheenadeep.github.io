@@ -9,7 +9,7 @@ defaultContentLanguage = "en"
 # Whether the default content language is in a subdirectory.
 defaultContentLanguageInSubdir = false
 # Whether the site has CJK language (Chinese, Japanese, Korean).
-hasCJKLanguage = true
+hasCJKLanguage = false
 
 # Pagination settings.
 [pagination]
