@@ -1,8 +1,8 @@
 ---
-title: "标签"
+title: "ট্যাগ"
 menu:
   main:
-    name: 标签
+    name: ট্যাগ
     weight: 3
     pre: fa-tags
 ---
