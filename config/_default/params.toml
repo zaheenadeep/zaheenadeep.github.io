@@ -35,7 +35,7 @@ author = "zdeep"
 # Global switch for the post-comment system. [true | false]
 enable = true
 # The provider options are as follows: [disqus | utterances | giscus]
-provider = "giscus"
+provider = ""
 
 # Disqus options
 [comments.disqus]
@@ -54,8 +54,8 @@ issue_term = ""
 # <gh-username>/<repo>
 repo = "zaheenadeep/chirpy-giscus"
 repo_id = "R_kgDOQSLhsA"
-category = "Announcements"
-category_id = "DIC_kwDOQSLhsM4CxmbV"
+category = "Comments"
+category_id = "DIC_kwDOQSLhsM4CxndW"
 # optional, default to 'pathname'
 mapping = "pathname"
 # optional, default to '0'
