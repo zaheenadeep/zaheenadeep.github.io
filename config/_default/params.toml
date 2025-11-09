@@ -61,7 +61,7 @@ mapping = "pathname"
 # optional, default to '0'
 strict = "0"
 # optional, default to 'bottom'
-input_position = "top"
+input_position = "bottom"
 # optional, default to site language
 lang = "en"
 # optional, default to the value of `1`
