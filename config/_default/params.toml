@@ -2,7 +2,7 @@
 toc = true
 # the avatar on sidebar, should be a relative path to /assets.
 avatar = "img/commons/avatar.jpg"
-author = "yifan"
+author = "zdeep"
 
 [assets]
   # Self-hosted static assets, default to false. If true, the assets will be hosted on your own server.
