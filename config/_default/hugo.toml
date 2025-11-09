@@ -22,4 +22,4 @@ hasCJKLanguage = false
 # Import the theme.
 [module]
   [[module.imports]]
-    path = "github.com/geekifan/hugo-theme-chirpy"
+    path = "github.com/zaheenadeep/hugo-theme-chirpy"
