@@ -2,7 +2,7 @@
   languageName = "English"
   languageCode = "en"
   weight = 2
-  title = "Zaheen Ahmed Deep"
+  title = "Zaheen Ahmed Deep ⋆˚࿔"
   [en.params]
     tagline = "Tinkerer. Builder. Hacker. Infrastructure Engineer."
 
@@ -10,6 +10,6 @@
   languageName = "বাংলা"
   languageCode = "bn"
   weight = 1
-  title = "জাহীন আহমেদ দীপ"
+  title = "জাহীন আহমেদ দীপ ⋆˚࿔"
   [bn.params]
     tagline = "অবকাঠামো প্রকৌশলী"
