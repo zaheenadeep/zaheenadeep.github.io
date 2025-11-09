@@ -1,5 +1,5 @@
 # The base URL for the site.
-baseURL = 'https://geekifan.github.io/chirpy-starter/'
+baseURL = 'https://zaheenadeep.github.io'
 # The title of the site.
 title = 'Chirpy'
 # Enable Git info › https://gohugo.io/methods/page/gitinfo/
