@@ -6,3 +6,5 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/twbs/bootstrap v5.3.6+incompatible h1:efmXVyq839m5QQ0+JBUdQQ1TrmoBqvQ5kRhUueKsH+4=
 github.com/twbs/bootstrap v5.3.6+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/zaheenadeep/hugo-theme-chirpy v1.0.2 h1:SswTVkAnbNAxNnGxSPRDZvW+1ay9Xnu2leRl9wc/k9U=
+github.com/zaheenadeep/hugo-theme-chirpy v1.0.2/go.mod h1:XwSwpHJVpbMYTeQsE+USDYM5DomhisCPiG29S12bxEU=
