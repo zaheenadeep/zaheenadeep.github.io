@@ -54,8 +54,8 @@ issue_term = ""
 # <gh-username>/<repo>
 repo = "zaheenadeep/chirpy-giscus"
 repo_id = "R_kgDOQSLhsA"
-category = "General"
-category_id = "DIC_kwDOQSLhsM4CxmbW"
+category = "Comments"
+category_id = "DIC_kwDOQSLhsM4CxndW"
 # optional, default to 'pathname'
 mapping = "pathname"
 # optional, default to '0'
