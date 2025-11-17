@@ -12,6 +12,33 @@ This dependence on the host kernel makes containers blazing fast to deploy and r
 One way to run containers is with program called Docker Engine. Docker is used by developers to deploy their own web apps. Homelab hobbyists use Docker to deploy popular web apps like [Pi-Hole](https://pi-hole.net/) and [Jellyfin](https://jellyfin.org/).
 
 For a truly practical understanding of containers, you will need to install Docker to follow the rest of the article:
-- [Install Docker Engine on Linux](https://docs.docker.com/engine/install)
+- [Install Docker Engine on Linux](https://docs.docker.com/engine/install) and follow [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/)
 - [Install Docker Desktop on Mac](https://docs.docker.com/desktop/setup/install/mac-install/) (uses Linux VM)
 - [Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install/) (uses WSL)
+
+Now open a terminal and spin up a container that mimick's Ubuntu's user space.
+```
+docker run ubuntu cat /etc/os-release
+```
+This command deploys an Ubuntu container and runs the command `cat /etc/os-release` inside it. Inside the container, `os-release` shows the OS as Ubuntu regardless of what the host OS is. Immediately when this command stops running, the container stops.
+
+You can check this yourself:
+```
+docker ps -a
+```
+This will print something like this:
+```
+CONTAINER ID   IMAGE     COMMAND                 CREATED          STATUS                        PORTS     NAMES
+6b8dc0691a1e   ubuntu    "cat /etc/os-release"   2 minutes ago    Exited (0) 2 minutes ago                agitated_ganguly
+```
+It shows the ID of the container you ran, what command you specified, and that it exited 2 minuted ago. There is also a randomly generated name for the container, `agitated_ganguly`.
+
+How can you prevent a container from closing? Let's run a command like `bash` that keeps running until you close it.
+```
+docker run -ti ubuntu /bin/bash
+```
+The `-ti` here is necessary since we want bash to run as an interactive terminal.
+
+Voila, now you're inside the container. Notice how the hostname is different from your host OS. You can use `ls` and `cd` to roam around the container and run `exit` to get out of it. Notice that the container is stopped the moment you exit `bash`, i.e. when `bash` stops running.
+
+Next, try https://github.com/docker/welcome-to-docker
