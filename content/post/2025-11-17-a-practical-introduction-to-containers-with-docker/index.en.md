@@ -41,4 +41,12 @@ The `-ti` here is necessary since we want bash to run as an interactive terminal
 
 Voila, now you're inside the container. Notice how the hostname is different from your host OS. You can use `ls` and `cd` to roam around the container and run `exit` to get out of it. Notice that the container is stopped the moment you exit `bash`, i.e. when `bash` stops running.
 
-Next, try https://github.com/docker/welcome-to-docker
+But you don't always need to specify a command when running Docker containers. Here's an example of a web app container: https://github.com/docker/welcome-to-docker. The repo contains the code for the web app that a developer would write. However, there is also code for hosting the web app inside a Docker container in [Dockerfile](https://github.com/docker/welcome-to-docker/blob/main/Dockerfile). One thing interesting to note is the last line, where a command is specified with `CMD` to run the HTTP server for the web app.
+
+Let us deploy this container:
+```
+docker run -p 8088:80 docker/welcome-to-docker
+```
+`-p 8080:80` commands Docker to map the container's port 80 to the host's port 8080. So now you can visit http://localhost:8080 to see the web app the container is hosting.
+
+Notice that you did not have to specify a command this time because it was already specified in the Dockerfile.
