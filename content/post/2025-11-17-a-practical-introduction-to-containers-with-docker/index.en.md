@@ -9,7 +9,7 @@ If this sounds awfully similar to a virtual machine, it is. The only difference 
 
 This dependence on the host kernel makes containers blazing fast to deploy and remove, especially compared to virtual machines.
 
-A popular way to run containers is using a program called Docker Engine. Docker is used by developers to deploy their own web apps. Homelab hobbyists use Docker to deploy existing applications like Pi-Hole and Jellyfin.
+One way to run containers is with program called Docker Engine. Docker is used by developers to deploy their own web apps. Homelab hobbyists use Docker to deploy popular web apps like [Pi-Hole](https://pi-hole.net/) and [Jellyfin](https://jellyfin.org/).
 
 For a truly practical understanding of containers, you will need to install Docker to follow the rest of the article:
 - [Install Docker Engine on Linux](https://docs.docker.com/engine/install)
