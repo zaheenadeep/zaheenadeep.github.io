@@ -13,7 +13,7 @@ If a container sounds awfully similar to a virtual machine, that is because it i
 
 What is this user space? An operating system consists of two parts: user space and kernel. The kernel runs with higher privileges and conducts core operating system tasks like memory management, process creation, block I/O management, and network implementation. The user space is everything else in the operating system, including applications like `bash` and `ip`. A container only simulates user space because, as a Linux process, it uses the host operating system's Linux kernel.
 
-So a host OS can have multiple containers, but they will all use host OS kernel. This makes containers blazing fast to deploy and remove, because you're skipping the overhead of simulating the kernel or hardware—as in the case of a virtual machine.
+So a host OS can have multiple containers, but they will all use the host OS kernel. This makes containers blazing fast to deploy, because you're skipping the overhead of simulating the kernel or hardware—as in the case of a virtual machine.
 
 ### Docker
 
