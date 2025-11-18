@@ -41,33 +41,33 @@ This will print something like the following:
 CONTAINER ID   IMAGE     COMMAND                 CREATED          STATUS                        PORTS     NAMES
 6b8dc0691a1e   ubuntu    "cat /etc/os-release"   2 minutes ago    Exited (0) 2 minutes ago                agitated_ganguly
 ```
-It shows the ID of the container you ran, what command you specified, and that it exited 2 minuted ago. There is also a randomly generated name for the container, `agitated_ganguly`.
+It shows the ID of the container you ran, what command you specified, and when the container exited. There is also a randomly generated name for the container you can use for identification in future Docker commands. In this case, the name is `agitated_ganguly`.
 
 ### Demo 2 – Interactive Shell
 
-But this container closed the moment we ran the command. To prevent the container from closing, let's run a command like `bash` that keeps running until you close it.
+But this container exited the moment the command stopped running. To prevent the container from exiting, let's run a command like `bash` that keeps running until you explicitly close it.
 ```shell
 docker run -ti ubuntu /bin/bash
 ```
-> The `-ti` here is necessary since we want bash to run as an interactive terminal.
+> The `-t` and `-i` flags here are necessary since we want bash to run as an interactive terminal.
 { .prompt-info }
 
-Voila, now we're inside the container. Notice how the hostname is different from the host OS. You can use `ls` and `cd` to roam around the container and run `exit` to get out of it. The container will stop the moment you exit `bash`, i.e. when the specified command stops running.
+Voila, now we're inside the container. Notice how the hostname of the container is different from the host OS according to the bash prompt. You can use `ls` and `cd` to roam around the container and run `exit` to get out of it. The container will stop the moment you exit `bash`, i.e. when the command specified with `docker run` stops.
 
 ### Demo 3 – Web App Deployment
 
-But you don't always need to specify a command when running Docker containers. Here's an example of a web app container: https://github.com/docker/welcome-to-docker. The repo contains the code for a web app that a developer might write. However, there is also code for hosting the web app inside a Docker container in [Dockerfile](https://github.com/docker/welcome-to-docker/blob/main/Dockerfile). One thing interesting to note is the last line, where a command is specified with `CMD` to run the HTTP server for the web app.
+But you don't always need to specify a command when running Docker containers. Here's an example of a web app: https://github.com/docker/welcome-to-docker. The repo contains code for a web app. However, there is also code for building a Docker container in [Dockerfile](https://github.com/docker/welcome-to-docker/blob/main/Dockerfile). Notice the last line, where a `docker run` command is specified with `CMD` to run the HTTP server in the Dockerfile.
 
 Let us deploy this container:
 ```shell
 docker run -p 8080:80 docker/welcome-to-docker
 ```
-`-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, where the HTTP server is listening, by visiting http://localhost:8080 from the host's web browser.
+`-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, on which the HTTP server inside the container is listening, by visiting http://localhost:8080 from the host. Try it with a web browser or `curl`.
 
 > You did not have to specify a command this time because `CMD` was already specified in the Dockerfile.
 { .prompt-info }
 
-You can stop the container by sending SIGINT (Ctrl + C). 
+Once done, you can stop the container by sending SIGINT (Ctrl + C).
 
 ### Demo 4 – Docker Compose
 
