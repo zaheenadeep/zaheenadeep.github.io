@@ -17,7 +17,7 @@ So a host OS can have multiple containers, but they will all use the host OS ker
 
 ### Docker
 
-One way to run containers is with a program called Docker. Docker is used by developers to deploy the web apps they develop. Homelab hobbyists use Docker to deploy popular web apps like [Pi-Hole](https://pi-hole.net/) and [Jellyfin](https://jellyfin.org/).
+One way to run containers is with a program called Docker. Docker is used by developers for creating local dev environments to deploy their applications inside containers. Homelab hobbyists use Docker to deploy popular web apps like [Pi-Hole](https://pi-hole.net/) and [Jellyfin](https://jellyfin.org/).
 
 For a practical understanding of containers, you will need to install Docker to follow the rest of the article:
 - [Install Docker Engine on Linux](https://docs.docker.com/engine/install) and follow [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/)
