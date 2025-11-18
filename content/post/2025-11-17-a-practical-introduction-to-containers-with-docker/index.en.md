@@ -3,11 +3,15 @@ title: A Practical Introduction to Containers with Docker
 date: 2025-11-17 00:00:00 -0500
 ---
 
-A container is an isolated Linux process running on a host Linux operating system. A container has its own hostname, root filesystem, process IDs, mountpoints, user IDs etc. independent of the host OS, so it acts like a new operating system with its own environment. However, all containers in a host use the host's Linux kernel. This means [system calls](https://man7.org/linux/man-pages/man2/syscalls.2.html), which are a kernel's job to execute, like [running a program](https://man7.org/linux/man-pages/man2/execve.2.html) or [creating a new directory](https://man7.org/linux/man-pages/man2/mkdir.2.html), are done by the host Linux kernel for all containers.
+A container is an _isolated_ Linux process running on a host Linux-based operating system. They keyword here is _isolated_. A container has its own hostname, root filesystem, process IDs, mountpoints, and user IDs independent of the host OS. Even though a container is only a Linux process, this isolation of attributes from the host OS makes a container appear as its own operating system with its own files, users and network interfaces.
 
-If this sounds awfully similar to a virtual machine, it is. The only difference is that a virtual machine simulates the hardware of a physical machine, whereas a container only simulates the user space—the non-kernel portion of an operating system. A container does not simulate the kernel. So if your host uses the Linux kernel, it cannot run Windows or FreeBSD containers since they require separate kernels. This is not a limitation for virtual machines, where each virtual machine can have a separate kernel installed.
+If a container sounds awfully similar to a virtual machine, that is because it is. The difference is that a virtual machine simulates the hardware of a physical machine (including its motherboard, CPU, RAM, and NIC), whereas a container only simulates the _user space_ of an operating system.
 
-This dependence on the host kernel makes containers blazing fast to deploy and remove, especially compared to virtual machines.
+What is this user space? An operating system consists of two parts: user space and kernel. The kernel runs with higher privileges and conducts core operating system tasks like memory management, process creation, block I/O management, and network implementation. The user space is everything else in the operating system, including applications like `bash`.
+
+A container only simulates user space because as a Linux process, it simply uses the host operating system's Linux kernel. So a host OS can have multiple containers, but they will all use host OS kernel.
+
+This makes containers blazing fast to deploy and remove because you're skipping the overhead of simulating the kernel or hardware—as in the case of a virtual machine. 
 
 One way to run containers is with program called Docker Engine. Docker is used by developers to deploy their own web apps. Homelab hobbyists use Docker to deploy popular web apps like [Pi-Hole](https://pi-hole.net/) and [Jellyfin](https://jellyfin.org/).
 
