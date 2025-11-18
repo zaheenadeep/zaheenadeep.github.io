@@ -69,6 +69,6 @@ docker run -p 8080:80 docker/welcome-to-docker
 
 You can stop the container by sending SIGINT (Ctrl + C). 
 
-### Demo 5 – Docker Compose
+### Demo 4 – Docker Compose
 
 Options to `docker run` can get very long. As an example, check out 
