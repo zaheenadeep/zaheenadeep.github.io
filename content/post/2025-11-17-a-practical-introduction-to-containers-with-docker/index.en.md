@@ -66,3 +66,9 @@ docker run -p 8080:80 docker/welcome-to-docker
 
 > You did not have to specify a command this time because `CMD` was already specified in the Dockerfile.
 { .prompt-info }
+
+You can stop the container by sending SIGINT (Ctrl + C). 
+
+### Demo 5 – Docker Compose
+
+Options to `docker run` can get very long. As an example, check out 
