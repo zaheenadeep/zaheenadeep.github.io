@@ -5,7 +5,7 @@ date: 2025-11-17 00:00:00 -0500
 
 ### What is a Container?
 
-A container is an _isolated_ Linux process running on a Linux-based host operating system. They keyword here is _isolated_. A container has its own hostname, root filesystem, process IDs, mountpoints, and user IDs independent of the host OS. Even though a container is only a Linux process, this isolation of attributes from the host OS makes a container appear as a separate operating system with its own files, users, and network interfaces.
+A container is an _isolated_ Linux process running on a Linux-based host operating system. The keyword here is _isolated_. A container has its own hostname, root filesystem, process IDs, mountpoints, and user IDs independent of the host OS. Even though a container is only a Linux process, this isolation of attributes from the host OS makes a container appear as a separate operating system with its own files, users, and network interfaces.
 
 ### Containers vs Virtual Machines
 
