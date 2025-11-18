@@ -56,16 +56,22 @@ Voila, now we're inside the container. Notice how the hostname of the container 
 
 ### Demo 3 – Web App Deployment
 
-But you don't always need to specify a command when running Docker containers. Here's an example of a web app: https://github.com/docker/welcome-to-docker. The repo contains code for a web app. However, there is also code for building a Docker container in [Dockerfile](https://github.com/docker/welcome-to-docker/blob/main/Dockerfile). Notice the last line, where a `docker run` command is specified with `CMD` to run the HTTP server in the Dockerfile.
+But you don't always need to specify a command when running Docker containers.
 
-Let us deploy this container:
+Here's an example of such a container: 
+https://github.com/docker/welcome-to-docker.
+
+The repo contains code for a web app. However, there is also code for building a Docker container in [Dockerfile](https://github.com/docker/welcome-to-docker/blob/main/Dockerfile).
+
+Important things to note in this file:
+1. The container is built on top of an existing container image called `node-21:alpine`. This is an [Alpine Linux container with NodeJS installed](https://hub.docker.com/_/node).
+2. In the last line, a `docker run` command is specified with `CMD`. The command is to run the HTTP server. This means we won't need to specify a command when we run `docker run` for this container.
+
+Let us deploy this container to see it in action:
 ```shell
 docker run -p 8080:80 docker/welcome-to-docker
 ```
 `-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, on which the HTTP server inside the container is listening, by visiting http://localhost:8080 from the host. Try it with a web browser or `curl`.
-
-> You did not have to specify a command this time because `CMD` was already specified in the Dockerfile.
-{ .prompt-info }
 
 Once done, you can stop the container by sending SIGINT (Ctrl + C).
 
