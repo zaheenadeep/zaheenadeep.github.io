@@ -60,8 +60,9 @@ But you don't always need to specify a command when running Docker containers. H
 
 Let us deploy this container:
 ```shell
-docker run -p 8088:80 docker/welcome-to-docker
+docker run -p 8080:80 docker/welcome-to-docker
 ```
-`-p 8080:80` commands Docker to map the container's port 80 to the host's port 8080. So now you can visit http://localhost:8080 to see the web app the container is hosting.
+`-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, where the HTTP server is listening, by visiting http://localhost:8080 from the host's web browser.
 
-Notice that you did not have to specify a command this time because it was already specified in the Dockerfile.
+> You did not have to specify a command this time because `CMD` was already specified in the Dockerfile.
+{ .prompt-info }
