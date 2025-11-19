@@ -81,4 +81,4 @@ Finally, let's deploy an actually useful app. But instead of deploying with `doc
 
 We will deploy Joplin, an open-source note-taking application. First, take a look at the `docker run` command [here](https://docs.linuxserver.io/images/docker-joplin/#docker-cli-click-here-for-more-info). The multiline Docker CLI command is a nightmare to comprehend.
 
-So instead we will make a Compose file with the YAML code (here)[https://docs.linuxserver.io/images/docker-joplin/#docker-compose-recommended-click-here-for-more-info].
+So instead we will make a Compose file with the YAML code [here](https://docs.linuxserver.io/images/docker-joplin/#docker-compose-recommended-click-here-for-more-info).
