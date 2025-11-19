@@ -52,26 +52,26 @@ docker run -ti ubuntu /bin/bash
 > The `-t` and `-i` flags here are necessary since we want bash to run as an interactive terminal.
 { .prompt-info }
 
-Voila, now we're inside the container. Notice how the hostname of the container is different from the host OS according to the bash prompt. You can use `ls` and `cd` to roam around the container and run `exit` to get out of it. The container will stop the moment you exit `bash`, i.e. when the command specified with `docker run` stops.
+Voila, now we're inside the container. Notice how the hostname of the container is different from the host OS according to the bash prompt. You can use `ls` and `cd` to roam around inside the container and run `exit` to get out of it. The container will stop the moment you exit `bash`, i.e. when the command specified with `docker run` stops.
 
 ### Demo 3 – Web App Deployment
 
 But you don't always need to specify a command when running Docker containers.
 
-Here's an example of such a container: 
-https://github.com/docker/welcome-to-docker.
+Here's an example:
+https://github.com/docker/welcome-to-docker
 
 The repo contains code for a web app. However, there is also code for building a Docker container in [Dockerfile](https://github.com/docker/welcome-to-docker/blob/main/Dockerfile).
 
 Important things to note in this file:
 1. The container is built on top of an existing container image called `node-21:alpine`. This is an [Alpine Linux container with NodeJS installed](https://hub.docker.com/_/node).
-2. In the last line, a `docker run` command is specified with `CMD`. The command is to run the HTTP server. This means we won't need to specify a command when we run `docker run` for this container.
+2. In the last line, a `docker run` command is specified with `CMD`. The command runs the HTTP server. This means we won't need to specify a command when we run `docker run` for this container.
 
-Let us deploy this container to see it in action:
+Let us deploy this container without a command to see it in action:
 ```shell
 docker run -p 8080:80 docker/welcome-to-docker
 ```
-`-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, on which the HTTP server inside the container is listening, by visiting http://localhost:8080 from the host. Try it with a web browser or `curl`.
+`-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, which the HTTP server inside the container is listening on, by visiting http://localhost:8080 from the host. Try it with a web browser or `curl`.
 
 Once done, you can stop the container by sending SIGINT (Ctrl + C).
 
