@@ -54,7 +54,7 @@ docker run -ti ubuntu /bin/bash
 
 Voila, now we're inside the container. Notice how the hostname of the container is different from the host OS according to the bash prompt. You can use `ls` and `cd` to roam around inside the container and run `exit` to get out of it. The container will stop the moment you exit `bash`, i.e. when the command specified with `docker run` stops.
 
-### Demo 3 – Web App Deployment
+### Demo 3 – Test Web App Deployment
 
 But you don't always need to specify a command when running Docker containers.
 
@@ -75,6 +75,10 @@ docker run -p 8080:80 docker/welcome-to-docker
 
 Once done, you can stop the container by sending SIGINT (Ctrl + C).
 
-### Demo 4 – Docker Compose
+### Demo 4 – Deploying Joplin with Docker Compose
 
-Options to `docker run` can get very long. As an example, check out 
+Finally, let's deploy an actually useful app. However, instead of deploying with `docker run`, we will use `docker compose`. This approach is more popoular in production and among homelabbers.
+
+We will deploy Joplin, which is an open-source note-taking application. First, take a look at the `docker run` command [here](https://docs.linuxserver.io/images/docker-joplin/#docker-cli-click-here-for-more-info). The multiline Docker CLI command is already a nightmare to understand.
+
+Instead, we will make a Compose file with the YAML code (here)[https://docs.linuxserver.io/images/docker-joplin/#docker-compose-recommended-click-here-for-more-info].
