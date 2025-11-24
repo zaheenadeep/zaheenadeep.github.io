@@ -108,5 +108,8 @@ You've learned how to use Docker CLI and its better variant Docker Compose to sp
 
 ### More Resources
 
-- [Komodo](https://komo.do/docs/intro): a web UI for Docker to make life easier
-- [Kubernetes](https://youtu.be/BE77h7dmoQU): learn about the most popular container orchestrator used in production deployments
+- [Komodo](https://komo.do/docs/intro): a web UI for Docker to make life easier.
+- [Kubernetes](https://youtu.be/BE77h7dmoQU) documentary by Honeypot: learn about the most popular container orchestrator used in production deployments.
+- [Linux Container Primitives: cgroups, namespaces, and more!](https://youtu.be/x1npPrzyKfs) by Samuel Karp: learn how Linux containers are created.
+- [Containers from Scratch] by Liz Rice: a demo creating Linux containers with Go!
+- [LXC](https://linuxcontainers.org/lxc/): another type of containers used often like VMs unlike Docker.
