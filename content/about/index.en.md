@@ -24,4 +24,4 @@ But you can't expect work to scratch every itch. I need a dose of everything lik
 
 After years of exposure to technology, I feel like sharing my thoughts every now and then. That is why I created this blog. Hopefully you're still reading. 🙂
 
-Want to talk? Shoot me a message in [LinkedIn](https://linkedin.com/in/zaheenadeep)
+Want to talk? Shoot me a message in [LinkedIn](https://linkedin.com/in/zaheenadeep).
