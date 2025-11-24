@@ -99,3 +99,5 @@ If ever needed, you can gracefully undeploy the container by running
 docker compose down
 ```
 from the `joplin` directory where `compose.yaml` resides.
+
+This will not delete the `./config` directory where Joplin stores the notes you create. So if you run `docker compose up -d` again to deploy a new Joplin container, your notes will still be there. That is the magic of containers!
