@@ -79,6 +79,6 @@ Once done, you can stop the container by sending SIGINT (Ctrl + C).
 
 Finally, let's deploy an actually useful app. But instead of deploying with `docker run`, use `docker compose`. This approach is more popular in production and among homelabbers.
 
-We will deploy Joplin, an open-source note-taking application. First, take a look at the `docker run` command [here](https://docs.linuxserver.io/images/docker-joplin/#docker-cli-click-here-for-more-info). The multiline Docker CLI command is a nightmare to comprehend.
+We will deploy Joplin, an open-source note-taking application. First, take a look at the `docker run` command [here](https://docs.linuxserver.io/images/docker-joplin/#docker-cli-click-here-for-more-info). The multiline Docker CLI command is not pleasant to read or understand.
 
 So instead we will make a Compose file with the YAML code [here](https://docs.linuxserver.io/images/docker-joplin/#docker-compose-recommended-click-here-for-more-info).
