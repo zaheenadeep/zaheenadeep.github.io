@@ -22,11 +22,6 @@ author = "zdeep"
   icon = "fab fa-linkedin"
 
 [[social.links]]
-  type = "email"
-  id = "your.email@example.com"
-  icon = "fas fa-envelope"
-
-[[social.links]]
   type = "rss"
   icon = "fas fa-rss"
   noblank = true  # will not open in new window
