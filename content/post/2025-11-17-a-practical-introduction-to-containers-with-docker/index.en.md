@@ -101,3 +101,12 @@ docker compose down
 from the `joplin` directory where `compose.yaml` resides.
 
 This will not delete the `./config` directory where Joplin stores the notes you create. So if you run `docker compose up -d` again to deploy a new Joplin container, your notes will still be there. That is the magic of containers!
+
+### Wrapping Up
+
+You've learned how to use Docker CLI and its better variant Docker Compose to spin up containers. Now it's your turn to deploy an app _you_ want to use using Docker! Check out [this awesome list](https://github.com/awesome-selfhosted/awesome-selfhosted) and deploy an app you like. Whatever app you choose, chances are it officially supports Docker-based installation.
+
+### More Resources
+
+- [Komodo](https://komo.do/docs/intro): a web UI for Docker to make life easier
+- [Kubernetes](https://youtu.be/BE77h7dmoQU): learn about the container orchestrator used the most in production deployments
