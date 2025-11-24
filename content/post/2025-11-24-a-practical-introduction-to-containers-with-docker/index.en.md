@@ -1,6 +1,7 @@
 ---
 title: A Practical Introduction to Containers with Docker
 date: 2025-11-24 02:00:00 -0500
+draft: false
 ---
 
 ### What is a Container?
