@@ -109,4 +109,4 @@ You've learned how to use Docker CLI and its better variant Docker Compose to sp
 ### More Resources
 
 - [Komodo](https://komo.do/docs/intro): a web UI for Docker to make life easier
-- [Kubernetes](https://youtu.be/BE77h7dmoQU): learn about the container orchestrator used the most in production deployments
+- [Kubernetes](https://youtu.be/BE77h7dmoQU): learn about the most popular container orchestrator used in production deployments
