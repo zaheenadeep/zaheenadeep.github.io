@@ -74,6 +74,9 @@ docker run -p 8080:80 docker/welcome-to-docker
 ```
 `-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, which the HTTP server inside the container is listening on, by visiting <http://localhost:8080> from the host. Try it with a web browser or `curl`.
 
+> If you're running Docker on a remote computer, you will need to replace `localhost` with the domain name or IP address of this host.
+{ .prompt-info }
+
 Once done, you can stop the container by sending SIGINT (Ctrl + C).
 
 ### Demo 4 – Deploying Joplin with Docker Compose
