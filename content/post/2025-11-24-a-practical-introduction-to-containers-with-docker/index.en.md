@@ -12,7 +12,7 @@ A container is an _isolated_ Linux process running on a Linux-based operating sy
 
 If a container sounds awfully similar to a virtual machine, that is because it is. The difference is that a virtual machine simulates the hardware of a physical machine (including its motherboard, CPU, RAM, and NIC), whereas a container only simulates the _user space_ of an operating system.
 
-What is this user space? An operating system consists of two parts: kernel and user space. The kernel runs with higher privileges and conducts core operating system tasks like memory management, process creation, and block I/O management. The user space consists of every other program in the operating system that is not the kernel. This includes applications like `bash`, `ip`, or even Chrome. A container only simulates user space and not the kernel because, as a Linux process, it can simply use the Linux kernel of the host OS.
+What is this user space? An operating system consists of two parts: the kernel and the user space. The kernel runs with higher privileges and conducts core operating system tasks like memory management, process creation, and block I/O management. The user space consists of every other program in the operating system that is not the kernel. This includes applications like `bash`, `ip`, or even Chrome. A container only simulates user space and not the kernel because, as a Linux process, it can simply use the Linux kernel of the host OS.
 
 So a host OS can have multiple containers, but they will all share the host OS kernel. This makes containers blazing fast to deploy, because you're skipping the overhead of simulating the kernel (or hardware—as in the case with virtual machines).
 
