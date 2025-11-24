@@ -49,7 +49,7 @@ But this container exited the moment the command stopped running. To prevent the
 ```shell
 docker run -ti ubuntu /bin/bash
 ```
-> The `-t` and `-i` flags here are necessary since we want bash to run as an interactive terminal.
+> The `-t` and `-i` options are necessary here since we want bash to run as an interactive terminal.
 { .prompt-info }
 
 Voila, now we're inside the container. Notice how the hostname of the container is different from the host OS according to the bash prompt. You can use `ls` and `cd` to roam around inside the container and run `exit` to get out of it. The container will stop the moment you exit `bash`, i.e. when the command specified with `docker run` stops.
@@ -81,4 +81,21 @@ Finally, let's deploy an actually useful app. But instead of deploying with `doc
 
 We will deploy Joplin, an open-source note-taking application. First, take a look at the `docker run` command [here](https://docs.linuxserver.io/images/docker-joplin/#docker-cli-click-here-for-more-info). The multiline Docker CLI command is not pleasant to read or understand.
 
-So instead we will make a Compose file with the YAML code [here](https://docs.linuxserver.io/images/docker-joplin/#docker-compose-recommended-click-here-for-more-info).
+So instead we will make a Compose file with the equivalent YAML configuration [here](https://docs.linuxserver.io/images/docker-joplin/#docker-compose-recommended-click-here-for-more-info). First, make a directory named `joplin`. Then create a file inside named `compose.yaml` with the [Compose configuration](https://docs.linuxserver.io/images/docker-joplin/#docker-compose-recommended-click-here-for-more-info). Replace `/path/to/config` with `./config` for the sake of the demo. You would normally point this to the path in your host OS where you want Joplin's persistent configurations to be saved.
+
+Now with `joplin` as your current working directory, run
+```shell
+docker compose up -d
+```
+> Option `-d` runs the container in background, i.e. in detached mode. This option exists for `docker run` as well.
+{ .prompt-info }
+
+This will deploy the container (to be precise, the "service") defined in the Compose file.
+
+Visit https://localhost:3001 and voila, you have your own note-taking application accessible with a browser!
+
+If ever needed, you can gracefully undeploy the container by running
+```shell
+docker compose down
+```
+from the `joplin` directory you created earlier.
