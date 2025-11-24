@@ -98,4 +98,4 @@ If ever needed, you can gracefully undeploy the container by running
 ```shell
 docker compose down
 ```
-from the `joplin` directory you created earlier.
+from the `joplin` directory where `compose.yaml` resides.
