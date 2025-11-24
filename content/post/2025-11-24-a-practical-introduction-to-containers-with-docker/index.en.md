@@ -72,7 +72,7 @@ Let us deploy this container without a command to see it in action:
 ```shell
 docker run -p 8080:80 docker/welcome-to-docker
 ```
-`-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, which the HTTP server inside the container is listening on, by visiting http://localhost:8080 from the host. Try it with a web browser or `curl`.
+`-p 8080:80` tells Docker to map the container's port 80 to the host's port 8080. This allows you to access the container's port 80, which the HTTP server inside the container is listening on, by visiting <http://localhost:8080> from the host. Try it with a web browser or `curl`.
 
 Once done, you can stop the container by sending SIGINT (Ctrl + C).
 
@@ -93,7 +93,7 @@ docker compose up -d
 
 This will deploy the container (to be precise, the "service") defined in the Compose file.
 
-Visit https://localhost:3001 and voila, you have your own note-taking application accessible from a browser!
+Visit <https://localhost:3001> and voila, you have your own note-taking application accessible from a browser!
 
 If ever needed, you can gracefully undeploy the container by running
 ```shell
