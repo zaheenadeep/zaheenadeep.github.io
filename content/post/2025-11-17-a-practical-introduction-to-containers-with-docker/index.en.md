@@ -92,7 +92,7 @@ docker compose up -d
 
 This will deploy the container (to be precise, the "service") defined in the Compose file.
 
-Visit https://localhost:3001 and voila, you have your own note-taking application accessible with a browser!
+Visit https://localhost:3001 and voila, you have your own note-taking application accessible from a browser!
 
 If ever needed, you can gracefully undeploy the container by running
 ```shell
