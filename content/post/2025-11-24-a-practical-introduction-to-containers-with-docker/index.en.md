@@ -108,7 +108,7 @@ This will not delete the `./config` directory where Joplin stores the notes you 
 
 ### Wrapping Up
 
-You've learned what containers are and how to use Docker to spin up containers. Now it's your turn to deploy an app _you_ want use using Docker! Check out [this awesome list](https://github.com/awesome-selfhosted/awesome-selfhosted) and deploy an app you like. Whatever app you choose, chances are it supports Docker-based deployment.
+You've learned what containers are and how to use Docker to spin up containers. Now it's your turn to deploy an app _you_ want using Docker! Check out [this awesome list](https://github.com/awesome-selfhosted/awesome-selfhosted) and deploy an app you like. Whatever app you choose, chances are it supports Docker-based deployment.
 
 ### More Resources
 
