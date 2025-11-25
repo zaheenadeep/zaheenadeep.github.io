@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>জাহীন আহমেদ দীপ ⋆˚࿔</title><link>https://zdeep.fyi/bn/</link><description>Recent content on জাহীন আহমেদ দীপ ⋆˚࿔</description><generator>Hugo</generator><language>bn</language><lastBuildDate>Mon, 24 Nov 2025 02:00:00 -0500</lastBuildDate><atom:link href="https://zdeep.fyi/bn/index.xml" rel="self" type="application/rss+xml"/><item><title>ডকার দিয়ে কনটেইনারের ব্যবহারিক পরিচিতি</title><link>https://zdeep.fyi/bn/post/2025-11-24-a-practical-introduction-to-containers-with-docker/</link><pubDate>Mon, 24 Nov 2025 02:00:00 -0500</pubDate><guid>https://zdeep.fyi/bn/post/2025-11-24-a-practical-introduction-to-containers-with-docker/</guid><description>&lt;h3 id="কনটইনর-ক" id=কনটইনর-ক&gt;
+ 
+ &lt;span class="me-2"&gt;কনটেইনার কী?&lt;/span&gt;
+ &lt;a href="#%e0%a6%95%e0%a6%a8%e0%a6%9f%e0%a6%87%e0%a6%a8%e0%a6%b0-%e0%a6%95" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h3&gt;&lt;p&gt;একটি কনটেইনার হলো একটি &lt;em&gt;আইসোলেটেড&lt;/em&gt; লিনাক্স প্রসেস, যা একটি
+লিনাক্স-ভিত্তিক অপারেটিং সিস্টেমে চলে। এখানে গুরুত্বপূর্ণ শব্দটি হলো
+&amp;ldquo;আইসোলেটেড&amp;rdquo;। একটি কনটেইনারের নিজস্ব হোস্টনেম, রুট ফাইল সিস্টেম, প্রসেস
+আইডি, মাউন্ট পয়েন্ট এবং ইউজার আইডি থাকে, যা হোস্ট OS থেকে স্বাধীন। যদিও
+একটি কনটেইনার কেবল একটি লিনাক্স প্রসেস, তবুও এই আইসোলেশন কনটেইনারকে
+নিজের ফাইল, ইউজার এবং নেটওয়ার্ক ইন্টারফেসসহ আলাদা অপারেটিং সিস্টেমের
+মতো দেখায়।&lt;/p&gt;
+&lt;h3 id="কনটইনর-বনম-ভরচযল-মশন" id=কনটইনর-বনম-ভরচযল-মশন&gt;
+ 
+ &lt;span class="me-2"&gt;কনটেইনার বনাম ভার্চুয়াল মেশিন&lt;/span&gt;
+ &lt;a href="#%e0%a6%95%e0%a6%a8%e0%a6%9f%e0%a6%87%e0%a6%a8%e0%a6%b0-%e0%a6%ac%e0%a6%a8%e0%a6%ae-%e0%a6%ad%e0%a6%b0%e0%a6%9a%e0%a6%af%e0%a6%b2-%e0%a6%ae%e0%a6%b6%e0%a6%a8" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h3&gt;&lt;p&gt;একটি কনটেইনার ভার্চুয়াল মেশিনের মতো শোনালে অবাক হওয়ার কিছু নেই&amp;mdash;কারণ
+অনেক দিক থেকেই সেটাই সত্য। পার্থক্য হলো: একটি ভার্চুয়াল মেশিন একটি
+ফিজিক্যাল মেশিনের হার্ডওয়্যার (মাদারবোর্ড, CPU, RAM, NIC সহ) সিমুলেট
+করে। অন্যদিকে, একটি কনটেইনার কেবলমাত্র একটি অপারেটিং সিস্টেমের &lt;em&gt;ইউজার
+স্পেস&lt;/em&gt; সিমুলেট করে।&lt;/p&gt;</description></item><item><title>আমি কে?</title><link>https://zdeep.fyi/bn/about/</link><pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate><guid>https://zdeep.fyi/bn/about/</guid><description>&lt;p&gt;আমি একজন টিঙ্কারার, বিল্ডার, &lt;a href="https://paulgraham.com/hp.html"&gt;হ্যাকার&lt;/a&gt;, কিন্তু সর্বোপরি একজন কম্পিউটারপ্রেমী।&lt;/p&gt;
+&lt;p&gt;ছোটবেলা থেকেই শুরু হয়েছিল &lt;code&gt;C:\Windows\System32&lt;/code&gt;-তে ঘোরাঘরি, না বুঝেই &lt;a href="https://en.wikipedia.org/wiki/QuickBASIC"&gt;QuickBASIC&lt;/a&gt; চালানো, বই না পড়তে পেরেও Excel-এর ফর্মুলা কপি মারা। কিন্তু জীবনের সকল পর্যায়ে কম্পিউটার আমার সাথে ছিল। আমি কখনো ডাম্বফোনে ওয়েবপেইজ লিখছিলাম, কখনো W3Schools থেকে jQuery শিখছিলাম, কখনো Android রুট করছিলাম, &lt;a href="https://xdaforums.com/c/custom-rom-central.2605/"&gt;XDA&lt;/a&gt; থেকে কাস্টম রম ইনস্টল করছিলাম, Arduino দিয়ে রোবট তৈরি করছিলাম, Windows দিয়ে Ubuntu ডুয়াল বুট করছিলাম।&lt;/p&gt;
+&lt;p&gt;অবশেষে আমি &lt;a href="https://umd.edu/"&gt;ইউনিভার্সিটি অফ ম্যারিল্যান্ড, কলেজ পার্ক&lt;/a&gt; থেকে কম্পিউটার বিজ্ঞানে স্নাতক ডিগ্রি অর্জন করি। আমি পরীক্ষা এবং কুইজ অপছন্দ করতাম, কিন্তু সফটওয়্যার নির্মাণ এবং কম্পিউটারের অভ্যন্তরীণ কাজ শেখা আমার খুব পছন্দের ছিল। এই সময়কালে আমি UMD-এর কম্পিউটিং গবেষণা ইনস্টিটিউট, &lt;a href="https://www.umiacs.umd.edu/about"&gt;UMIACS&lt;/a&gt;-এ সিস্টেম অ্যাডমিনিস্ট্রেটর হিসেবেও কাজ করেছি। এটি ছিল এন্টারপ্রাইজ কম্পিউটিং জগতে আমার দীক্ষা। একটি বৈচিত্র্যময় চাকুরি যার মধ্যে হেল্প ডেস্ক সাপোর্ট থেকে শুরু করে ডেটা সেন্টার ম্যানেজমেন্ট, SLURM ক্লাস্টার ডিপ্লয়মেন্ট, AV ফ্যাসিলিটি ম্যানেজমেন্ট, পডম্যান কন্টেইনারাইজেশন, পাপেট কনফিগারেশন ম্যানেজমেন্ট, vSphere এবং KVM ভার্চুয়ালাইজেশন, পাইথন এবং জ্যাঙ্গো অ্যাপ ডেভেলপমেন্ট, স্কেল-আউট NAS অপারেশন, প্রিন্টার ম্যানেজমেন্ট, ব্যাকআপ, অবজেক্ট স্টোরেজ এবং ওয়েব হোস্টিং সবকিছুই অন্তর্ভুক্ত ছিল। এর চেয়ে ভালো প্রশিক্ষণক্ষেত্র আমার আর থাকতে পারত না।&lt;/p&gt;</description></item><item><title>আর্কাইভ</title><link>https://zdeep.fyi/bn/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zdeep.fyi/bn/archives/</guid><description/></item></channel></rss>

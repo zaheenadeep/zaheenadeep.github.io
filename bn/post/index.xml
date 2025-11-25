@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on জাহীন আহমেদ দীপ ⋆˚࿔</title><link>https://zdeep.fyi/bn/post/</link><description>Recent content in Posts on জাহীন আহমেদ দীপ ⋆˚࿔</description><generator>Hugo</generator><language>bn</language><lastBuildDate>Mon, 24 Nov 2025 02:00:00 -0500</lastBuildDate><atom:link href="https://zdeep.fyi/bn/post/index.xml" rel="self" type="application/rss+xml"/><item><title>ডকার দিয়ে কনটেইনারের ব্যবহারিক পরিচিতি</title><link>https://zdeep.fyi/bn/post/2025-11-24-a-practical-introduction-to-containers-with-docker/</link><pubDate>Mon, 24 Nov 2025 02:00:00 -0500</pubDate><guid>https://zdeep.fyi/bn/post/2025-11-24-a-practical-introduction-to-containers-with-docker/</guid><description>&lt;h3 id="কনটইনর-ক" id=কনটইনর-ক&gt;
+ 
+ &lt;span class="me-2"&gt;কনটেইনার কী?&lt;/span&gt;
+ &lt;a href="#%e0%a6%95%e0%a6%a8%e0%a6%9f%e0%a6%87%e0%a6%a8%e0%a6%b0-%e0%a6%95" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h3&gt;&lt;p&gt;একটি কনটেইনার হলো একটি &lt;em&gt;আইসোলেটেড&lt;/em&gt; লিনাক্স প্রসেস, যা একটি
+লিনাক্স-ভিত্তিক অপারেটিং সিস্টেমে চলে। এখানে গুরুত্বপূর্ণ শব্দটি হলো
+&amp;ldquo;আইসোলেটেড&amp;rdquo;। একটি কনটেইনারের নিজস্ব হোস্টনেম, রুট ফাইল সিস্টেম, প্রসেস
+আইডি, মাউন্ট পয়েন্ট এবং ইউজার আইডি থাকে, যা হোস্ট OS থেকে স্বাধীন। যদিও
+একটি কনটেইনার কেবল একটি লিনাক্স প্রসেস, তবুও এই আইসোলেশন কনটেইনারকে
+নিজের ফাইল, ইউজার এবং নেটওয়ার্ক ইন্টারফেসসহ আলাদা অপারেটিং সিস্টেমের
+মতো দেখায়।&lt;/p&gt;
+&lt;h3 id="কনটইনর-বনম-ভরচযল-মশন" id=কনটইনর-বনম-ভরচযল-মশন&gt;
+ 
+ &lt;span class="me-2"&gt;কনটেইনার বনাম ভার্চুয়াল মেশিন&lt;/span&gt;
+ &lt;a href="#%e0%a6%95%e0%a6%a8%e0%a6%9f%e0%a6%87%e0%a6%a8%e0%a6%b0-%e0%a6%ac%e0%a6%a8%e0%a6%ae-%e0%a6%ad%e0%a6%b0%e0%a6%9a%e0%a6%af%e0%a6%b2-%e0%a6%ae%e0%a6%b6%e0%a6%a8" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h3&gt;&lt;p&gt;একটি কনটেইনার ভার্চুয়াল মেশিনের মতো শোনালে অবাক হওয়ার কিছু নেই&amp;mdash;কারণ
+অনেক দিক থেকেই সেটাই সত্য। পার্থক্য হলো: একটি ভার্চুয়াল মেশিন একটি
+ফিজিক্যাল মেশিনের হার্ডওয়্যার (মাদারবোর্ড, CPU, RAM, NIC সহ) সিমুলেট
+করে। অন্যদিকে, একটি কনটেইনার কেবলমাত্র একটি অপারেটিং সিস্টেমের &lt;em&gt;ইউজার
+স্পেস&lt;/em&gt; সিমুলেট করে।&lt;/p&gt;</description></item></channel></rss>
